@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(Asset/images/bg.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 70vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+    margin: -10px -80px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.button input::placeholder {
+    color: rgb(191, 187, 187);
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 24px;
+    margin: 3px;
+    left: 60px;
+    top: -5px;
+    font-weight: 800;
+    background-color: rgba(248, 243, 243, 0.021);
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #ffffff5c;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    font-size: 23px;
+    border-radius: 4px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 3px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.main input {
+    padding: 15px 150px 15px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+    margin: 20px 130px;
+    width: 80vw;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.btn1 {
+    margin: 125px;
+}
+
+.flex {
+    display: flex;
+    position: relative;
+    left: 40px;
+    width: 76vw;
+    height: 300px;
+    overflow: hidden;
+    margin: 20px 130px;
+}
+
+.flex .flex-item {
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.flex .flex-item img {
+    width: 180px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.flex .flex-item img:hover {
+    transform: scale(1.1);
+}
+
+.box-width {
+    width: 311px;
+    margin: 8px;
+    border-radius: 20px;
+    height: 280px;
+    background-color: #1f1323;
+}
+
+.box-width span {
+    position: relative;
+    left: 360px;
+    top: 1085px;
+}
+
+.box-width span {
+    position: relative;
+    top: -1030px;
+    left: -135px;
+}
+
+.box-width span img {
+    position: absolute;
+
+}
+
+.box-width span #one {
+    top: 1085px;
+    left: 360px;
+}
+
+.box-width span #two {
+    top: 1075px;
+    left: 360px;
+}
+
+.box-width span #three {
+    top: 1090px;
+    left: 355px;
+}
+
+.box-width span #forth {
+    top: 1065px;
+    left: 360px;
+}
+
+.imgid {
+    color: black;
+    position: relative;
+    font-weight: 900;
+    left: -20px;
+    font-size: 100px;
+    bottom: 130px;
+    text-shadow: 3px 3px 0px #ffffff, -1px -3px 0px #ffffff, -1px 3px 0px #ffffff, 3px -3px 0px #ffffff
+}
+
+.second {
+    margin: 20px 130px;
+    width: 85vw;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.second h2 {
+    margin-bottom: 15px;
+}
+
+.second-box {
+    display: flex;
+}
+
+.second .second-box h3 {
+    font-size: 20px;
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+
+.second .second-box p:nth-child(1) {
+    padding: 10px;
+    margin: 17px;
+}
+
+.second .second-box p:nth-child(2) {
+
+    margin: 17px;
+}
+
+.second .second-box p:nth-child(3) {
+    padding: 10px;
+    margin: 17px;
+}
+
+.second .second-box p:nth-child(4) {
+    padding: 10px;
+    margin: 17px;
+}
+
+.faq h2 {
+    position: relative;
+    left: 90px;
+    font-size: 24px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+    /* width: 30px;
+    height: 30px; */
+}
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 82vw;
+    font-size: 24px;
+    margin: 8px auto;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+
+footer {
+    color: white;
+    margin: auto;
+    max-width: 75vw;
+    padding: 50px;
+    height: 35vh;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+footer .questions {
+    padding: 34px 0;
+    font-size: 15px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.Footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.down span {
+    position: absolute;
+}
+
+.down>.button {
+    position: relative;
+    top: 50px;
+    left: -30px;
+}
+
+.down .button input {
+    padding: 15px 400px 15px 20px;
+}

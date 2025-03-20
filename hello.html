@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        /* Slider Container */
+        .slider {
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Slides Wrapper */
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Each Slide */
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Show Active Slide */
+        .slide.active {
+            display: block;
+        }
+
+        /* Images */
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navigation Buttons */
+        .prev-btn, .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+
+        /* Left (←) Button */
+        .prev-btn {
+            left: 10px;
+        }
+
+        /* Right (→) Button */
+        .next-btn {
+            right: 10px;
+        }
+
+        /* Hover Effect */
+        .prev-btn:hover, .next-btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="https://source.unsplash.com/800x400/?nature" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/800x400/?city" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/800x400/?mountains" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/800x400/?ocean" alt="Slide 4">
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev-btn">&#8592;</button>  <!-- Left Arrow (←) -->
+        <button class="next-btn">&#8594;</button>  <!-- Right Arrow (→) -->
+    </div>
+
+    <script>
+       
+    </script>
+
+</body>
+</html>
