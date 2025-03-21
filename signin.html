@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Netflix </title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="sign.css">
     <link rel="stylesheet" href="logo.svg">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -13,11 +13,13 @@
 
 <body>
 
-    <div class="main">
+    <div class="main1">
+        <div class="box">
         <nav>
             <span> <img width="53" src="./logo.svg">
             </span>
         </nav>
+    </div>
         <div class="form-container">
             <h1>Sign In</h1>
             <form action="/signin" method="POST">
@@ -28,7 +30,7 @@
 
                 <button id="btn1" type="submit">Sign In</button>
                 <span>
-                    Or
+                    OR
                 </span>
                 <button id="btn2" type="submit">Use a sign-in code</button>
             </form>
@@ -40,17 +42,19 @@
                 <label for="agree">Remember me</label>
             </div>
             <span id="new">
-                New to Netflix? Sign up now.
+                New to Netflix?<div>Sign up now.</div> 
             </span>
 
             <span id="new2">
                 This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="#">Learn more.</a>
             </span>
         </div>
+    
         <div class="separation1">
         </div>
+        <div>
 
-        <footer>
+        <!-- <footer >
             <div class="questions">
                 Questions? Call 000-800-919-1694
             </div>
@@ -74,7 +78,11 @@
                     <a href="faq">Privacy</a>
                 </div>
             </div>
-        </footer>
+            
+        </footer> -->
+    </div>
+    
+   
 
 
 </body>
