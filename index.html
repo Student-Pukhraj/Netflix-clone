@@ -266,6 +266,26 @@
         </footer>
 
 
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const faqBoxes = document.querySelectorAll(".faqbox");
+            
+                faqBoxes.forEach(box => {
+                    box.addEventListener("click", function() {
+                        const answer = this.nextElementSibling;
+                        
+                        if (answer.style.display === "block") {
+                            answer.style.display = "none";
+                        } else {
+                            document.querySelectorAll(".answer").forEach(ans => ans.style.display = "none"); // Close other answers
+                            answer.style.display = "block";
+                        }
+                    });
+                });
+            });
+            </script>
+
+
 </body>
 
 </html>>
