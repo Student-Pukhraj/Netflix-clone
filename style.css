@@ -293,20 +293,34 @@ nav button {
 
 .faqbox svg {
     filter: invert(1);
-    /* width: 30px;
-    height: 30px; */
 }
 
-.faqbox {
+/* .faqbox {
     display: flex;
     justify-content: space-between;
     background-color: #2d2d2d;
     padding: 24px;
-    max-width: 82vw;
+    
     font-size: 24px;
     margin: 8px auto;
     cursor: pointer;
     transition: all 1s ease-out;
+} */
+
+.faqbox {
+    display: flex
+    ;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #303030;
+        padding: 20px;
+        left: 90px;
+        margin: 10px 0;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
 }
 
 footer {
@@ -358,4 +372,36 @@ footer .questions {
 
 .down .button input {
     padding: 15px 400px 15px 20px;
+}
+
+
+
+.faqbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    padding: 22px;
+    margin: 10px 0;
+    width: 83vw;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.faqbox:hover {
+    background-color: #505050;
+}
+
+.answer {
+    display: none;
+    background-color: #181818;
+    padding: 22px;
+    color: white;
+    left: 90px;
+    width: 83vw;
+    font-size: 20px;
+    margin: -5px 0px 10px 0;
+    position: relative;
 }
