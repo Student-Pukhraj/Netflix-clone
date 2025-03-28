@@ -245,6 +245,7 @@ nav button {
 
 .second-box {
     display: flex;
+    max-width: 85vw;
 }
 
 .second .second-box h3 {
@@ -309,19 +310,18 @@ nav button {
 } */
 
 .faqbox {
-    display: flex
-    ;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #303030;
-        padding: 20px;
-        left: 90px;
-        margin: 10px 0;
-        font-size: 18px;
-        color: white;
-        cursor: pointer;
-        transition: 0.3s;
-        position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303030;
+    padding: 20px;
+    left: 90px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
 }
 
 footer {
@@ -405,4 +405,150 @@ footer .questions {
     font-size: 20px;
     margin: -5px 0px 10px 0;
     position: relative;
+}
+
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+    nav {
+        width: 60vw;
+    }
+    .main{
+        width: 108vw;
+    }
+
+    nav img {
+        width: 100px;
+    }
+    .btn {
+        left: 50px;
+    }
+
+    .hero {
+        padding: 0;
+    }
+
+    .btn {
+        padding: 3px 10px;
+    }
+
+    .main input {
+        padding: 15px 120px 15px 20px;
+        left: 25px;
+        position: relative;
+    }
+
+    .btn-red {
+        position: relative;
+        margin-top: 25px;
+        left: 110px;
+    }
+
+    .first {
+        position: relative;
+        left: -120px;
+        margin-top: -70px;
+    }
+
+    .faqbox {
+        width: 80vw;
+        left: 20px;
+        font-size: 16px;
+    }
+
+    .faq {
+        padding: 0;
+        position: relative;
+    }
+
+    .answer {
+        width: 80vw;
+        left: 20px;
+        font-size: 16px;
+    }
+
+    .down .button input {
+        padding: 15px 100px 15px 20px;
+    }
+
+    .down {
+        flex-direction: column;
+    }
+
+    .down>.button {
+        margin-top: 90px;
+        left: 10px;
+    }
+
+    .down span {
+        position: relative;
+        text-align: center;
+        left: -10px;
+        width: 90vw;
+        margin-top: 10px;
+        margin-bottom: -120px;
+    }
+
+    .flex {
+        width: 95vw;
+        left: -125px;
+    }
+
+    .faq h2 {
+        left: 20px;
+    }
+
+    .second {
+        left: -125px;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .second h2 {
+        margin-bottom: 5px;
+        left: 15px;
+        position: relative;
+    }
+
+    .second-box {
+        flex-direction: column;
+    }
+
+    .box-width {
+        width: 350px;
+        display: flex;
+        left: 6px;
+        position: relative;
+    }
+
+    .second .second-box h3 {
+        left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .second .second-box p:nth-child(2) {
+        margin: 10px;
+        left: 5px;
+        position: relative;
+    }
+
+    footer {
+        padding: 50px 0;
+        max-width: none;
+        left: 10px;
+        position: relative;
+        height: 25vh;
+    }
+
+    footer .questions {
+        position: relative;
+        font-size: 16px;
+    }
+
+    .footer a {
+        font-size: 12px;
+    }
+    .hero> :nth-child(3){
+        left: -10px;
+        width: 90vw;
+        position: relative;
+    }
 }
