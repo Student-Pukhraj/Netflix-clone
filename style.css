@@ -362,13 +362,14 @@ footer .questions {
 }
 
 .down span {
-    position: absolute;
+   position: absolute;
+    max-width: 80vw;
+    margin-top: -20px;
 }
 
 .down>.button {
     position: relative;
-    top: 50px;
-    left: -30px;
+    top: 60px;
 }
 
 .down .button input {
@@ -389,6 +390,10 @@ footer .questions {
     color: white;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.faqbox img{
+    filter: invert(1);
 }
 
 .faqbox:hover {
